@@ -1,4 +1,5 @@
 #Miles Nordwall
 #Quad Heap
 
-print("hello world")
+def heapSort(arr)
+	
