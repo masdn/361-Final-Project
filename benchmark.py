@@ -2,10 +2,13 @@ import random
 import time
 from typing import Callable, List
 from TimSort import timsort
+from quad_heap import heap_sort
+
 
 # === Benchmark Configuration ===
 SORTING_ALGORITHMS: dict[str, Callable[[List[int]], None]] = {
     'Timsort': timsort,
+    'quad_heap': heap_sort,
     "Python built-in sort": lambda arr: arr.sort(),
     # 'MergeSort': merge_sort,
     # 'QuickSort': quick_sort,

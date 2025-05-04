@@ -42,7 +42,7 @@ a normal heap but the build heap part starts from floor(n/4)
 since we are building a quad heap. 
 '''
 
-def heapSort(arr):
+def heap_sort(arr):
     n = len(arr)
     
     #build the heap startnig from floor(n/4) to 0
@@ -66,7 +66,7 @@ def printArr(arr):
     print()
 
 arr = [9,4,3,8,10,2,5]
-heapSort(arr)
+heap_sort(arr)
 printArr(arr)
 
 
