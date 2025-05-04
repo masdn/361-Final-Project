@@ -1,5 +1,5 @@
 import sys 
-sys.setrecursionlimit(10,000)
+sys.setrecursionlimit(10_000)
 
 
 # Given 3 sorted arrays (the result of splitting our array into three in threeWay)
@@ -42,6 +42,9 @@ def merge3Arrs(left, middle,right):
 def threeWay(arr):
     if (len(arr) <= 1):
         return arr 
+    elif len(arr) == 2:
+        return arr if arr[0] <= arr[1] else [arr[1], arr[0]]
+    # isn't recursion in python fun
 
     divPoint = len(arr) // 3
     mp1 = divPoint 
