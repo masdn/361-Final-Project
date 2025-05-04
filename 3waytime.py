@@ -1,80 +1,57 @@
-def merge(arr, left, mid1, mid2, right):
-    
-    # Sizes of three subarrays
-    size1 = mid1 - left + 1
-    size2 = mid2 - mid1
-    size3 = right - mid2
-    
-    # Temporary arrays for three parts
-    left_arr = arr[left:left + size1]
-    mid_arr = arr[mid1 + 1:mid1 + 1 + size2]
-    right_arr = arr[mid2 + 1:mid2 + 1 + size3]
-    
-    # Merge three sorted subarrays
+# Given 3 sorted arrays (the result of splitting our array into three in threeWay)
+# merge them into one by performing 
+
+def merge3Arrs(left, middle,right):
+    result = []
     i = j = k = 0
-    index = left
-    
-    while i < size1 or j < size2 or k < size3:
-        min_value = float('inf')
-        min_idx = -1
+
+    while i < len(left) or j < len(middle) or k < len(right):
+        # builds list of values and their sources for comparison
+        values = []
+        if i < len(left):
+            values.append((left[i], 'left'))
+        if j < len(middle):
+            values.append((middle[j], 'middle'))
+        if k < len(right):
+            values.append((right[k], 'right'))
+
+        if not values:
+            break
         
-        # Find the smallest among the three current elements
-        if i < size1 and left_arr[i] < min_value:
-            min_value = left_arr[i]
-            min_idx = 0
-        if j < size2 and mid_arr[j] < min_value:
-            min_value = mid_arr[j]
-            min_idx = 1
-        if k < size3 and right_arr[k] < min_value:
-            min_value = right_arr[k]
-            min_idx = 2
-        
-        # Place the smallest element in the merged array
-        if min_idx == 0:
-            arr[index] = left_arr[i]
+        # vals = [(10, 'l'), (2, 'm'), (5, 'r')] -> smallest = 2, source = left
+        smallest, source = min(values, key=lambda x: x[0])
+
+        # grab tuple with the smallest value, append to result from respective list, 
+        # increment respective pointer
+        if source == 'left':
+            result.append(left[i])
             i += 1
-        elif min_idx == 1:
-            arr[index] = mid_arr[j]
+        elif source == 'middle':
+            result.append(middle[j])
             j += 1
         else:
-            arr[index] = right_arr[k]
+            result.append(right[k])
             k += 1
-        
-        index += 1
 
-def three_way_merge_sort(arr, left, right):
-    
-    # Base case: If single element, return
-    if left >= right:
-        return
-    
-    # Finding two midpoints for 3-way split
-    mid1 = left + (right - left) // 3
-    mid2 = left + 2 * (right - left) // 3
-    
-    # Recursively sort first third
-    three_way_merge_sort(arr, left, mid1)
-    
-    # Recursively sort second third
-    three_way_merge_sort(arr, mid1 + 1, mid2)
-    
-    # Recursively sort last third
-    three_way_merge_sort(arr, mid2 + 1, right)
-    
-    # Merge the sorted parts
-    merge(arr, left, mid1, mid2, right)
-    
+    return result
 
+def threeWay(arr):
+    if (len(arr) <= 1):
+        return arr 
 
-def tedsThreeway(arr, left, right):
-    if left >= right:
-        return # one element base case
-    # split arr into 3 arrays, 
-    # 
+    divPoint = len(arr) // 3
+    mp1 = divPoint 
+    mp2 = divPoint*2
+
+    l = threeWay(arr[:mp1]) # grab beginning to mp1
+    m = threeWay(arr[mp1:mp2]) # slice from mp1 to mp2
+    r = threeWay(arr[mp2:]) # array from second "midpoint" to end
+
+    return merge3Arrs(l,m,r)
 
 if __name__ == "__main__":
-    arr = [5,0,-1,10,1,15,3,9,-5]
-    three_way_merge_sort(arr, 0, len(arr)-1)
+    arr = [5,-1,47,-47,69,10,0,-10000]
+    threeWay(arr)
     print(*arr)
 
 
