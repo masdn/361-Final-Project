@@ -4,6 +4,7 @@ from typing import Callable, List
 from TimSort import timsort
 from quad_heap import heap_sort
 from rand_quicksort import rand_QS
+from '3waytime' import threeWay
 
 
 # === Benchmark Configuration ===
@@ -11,7 +12,7 @@ SORTING_ALGORITHMS: dict[str, Callable[[List[int]], None]] = {
     'Timsort': timsort,
     'quad_heap': heap_sort,
     'rand_quicksort' : rand_QS,
-    #'3waytime': 
+    '3waytime': threeWay,
     "Python built-in sort": lambda arr: arr.sort(),
 }
 
