@@ -1,3 +1,7 @@
+import sys 
+sys.setrecursionlimit(10,000)
+
+
 # Given 3 sorted arrays (the result of splitting our array into three in threeWay)
 # merge them into one by performing 
 
@@ -51,7 +55,7 @@ def threeWay(arr):
 
 if __name__ == "__main__":
     arr = [5,-1,47,-47,69,10,0,-10000]
-    threeWay(arr)
-    print(*arr)
+    sortedArr = threeWay(arr)
+    print(sortedArr)
 
 
