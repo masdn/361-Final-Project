@@ -65,9 +65,6 @@ def printArr(arr):
         print(i, end= " ")
     print()
 
-arr = [9,4,3,8,10,2,5]
-heap_sort(arr)
-printArr(arr)
 
 
     
