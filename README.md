@@ -6,3 +6,6 @@ Randomized Quick Sort
 
 Miles Nordwall
 Quad-Heap
+
+Chuong Nguyen
+Tim Sort
