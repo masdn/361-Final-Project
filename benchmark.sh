@@ -22,7 +22,7 @@ for ((n=20; n<=30; n++)); do
         # Run each algorithm and time it
         for ALG in "$ALG1" "$ALG2" "$ALG3" "$ALG4"; do
             echo -n "$ALG - " | tee -a $RESULTS_FILE
-            /usr/bin/time -f "%e seconds" -o temp_time.txt python3 $ALG "input_$TYPE.npy"
+            /usr/bin/time -f "%.3f seconds" -o temp_time.txt python3 $ALG "input_$TYPE.npy"
             cat temp_time.txt | tee -a $RESULTS_FILE
         done
     done
