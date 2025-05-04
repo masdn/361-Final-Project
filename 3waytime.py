@@ -1,4 +1,5 @@
 import sys 
+import numpy as np
 sys.setrecursionlimit(10_000)
 
 
@@ -57,8 +58,8 @@ def threeWay(arr):
     return merge3Arrs(l,m,r)
 
 if __name__ == "__main__":
-    arr = [5,-1,47,-47,69,10,0,-10000]
-    sortedArr = threeWay(arr)
-    print(sortedArr)
+    arr = np.load(sys.argv[1])
+    arrList = arr.tolist()
+    sortedArr = threeWay(arrList)
 
 

@@ -1,0 +1,221 @@
+Benchmarking results
+Testing input size: 2^20 (1048576 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
+Testing input size: 2^21 (2097152 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
+Testing input size: 2^22 (4194304 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
+Testing input size: 2^23 (8388608 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
+Testing input size: 2^24 (16777216 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
+Testing input size: 2^25 (33554432 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
+Testing input size: 2^26 (67108864 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
+Testing input size: 2^27 (134217728 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
+Testing input size: 2^28 (268435456 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
+Testing input size: 2^29 (536870912 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
+Testing input size: 2^30 (1073741824 elements)
+Data type: int
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+Data type: float
+TimSort.py - Command exited with non-zero status 127
+0.00 seconds
+3waytime.py - Command exited with non-zero status 127
+0.00 seconds
+quad_heap.py - Command exited with non-zero status 127
+0.00 seconds
+rand_quicksort.py - Command exited with non-zero status 127
+0.00 seconds
+------------------------------------------
