@@ -1,4 +1,6 @@
 import sys 
+import numpy as np 
+import time
 sys.setrecursionlimit(10_000)
 
 
@@ -58,3 +60,11 @@ def threeWay(arr):
 
 
 
+if __name__ == "__main__":
+    file = sys.argv[1]
+    arr = np.load(file)
+    start = time.time() 
+    sortedArr = threeWay(arr.tolist())
+    end = time.time()
+    timeF = end - start
+    print("Sorted {file} in {timeF} seconds.\n", file, timeF)

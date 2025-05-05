@@ -10,7 +10,7 @@ END=30
 # generate arrays from 2^20 to 2^30
 for ((i=START; i<=END; i++)); do
     SIZE=$((2 ** i))
-    FILENAME="$OUTPUT_DIR/array_2^$i.npy"
+    FILENAME="$OUTPUT_DIR/array_$i.npy"
 
     echo "Generating array of size 2^$i ($SIZE)..."
 
