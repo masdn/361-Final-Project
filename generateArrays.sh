@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-OUTPUT_DIR="arrays"
+OUTPUT_DIR="intarrays"
 mkdir -p "$OUTPUT_DIR"
 
 START=20
@@ -16,7 +16,7 @@ for ((i=START; i<=END; i++)); do
 
     python3 -c "
 import numpy as np
-a = np.random.rand($SIZE).astype(np.float64)
+a = np.random.rand($SIZE).astype(np.int64)
 np.save('$FILENAME', a)
 "
 
