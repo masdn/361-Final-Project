@@ -68,3 +68,4 @@ if __name__ == "__main__":
     end = time.time()
     timeF = end - start
     print("Sorted {file} in {timeF} seconds.\n", file, timeF)
+    print(np.array(sortedArr))
