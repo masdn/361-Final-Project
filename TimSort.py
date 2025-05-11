@@ -81,9 +81,12 @@ def main() -> None:
 if __name__ == "__main__":
     file = sys.argv[1]
     arr = np.load(file)
-    start = time.time() 
-    sortedArr = timsort(arr.tolist())
+    print("Unsorted \n", np.array(arr))
+    arr_list = arr.tolist()
+    start = time.time()
+    timsort(arr_list)  # sorts in-place
     end = time.time()
     timeF = end - start
-    print("Sorted {file} in {timeF} seconds.\n", file, timeF)
-    print(np.array(sortedArr))
+    print(f"Sorted {file} in {timeF:.6f} seconds.\n")
+    sorted_arr = np.array(arr_list)
+    print("Sorted:\n", sorted_arr)

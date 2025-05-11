@@ -71,12 +71,14 @@ def printArr(arr):
 if __name__ == "__main__":
     file = sys.argv[1]
     arr = np.load(file)
-    start = time.time() 
-    sortedArr = heap_sort(arr.tolist())
+    print("Unsorted:\n", arr)
+    arr_list = arr.tolist()
+    start = time.time()
+    heap_sort(arr_list)
     end = time.time()
     timeF = end - start
-    print("Sorted {file} in {timeF} seconds.\n", file, timeF)
-    print(np.array(sortedArr))
+    print(f"Sorted {file} in {timeF:.6f} seconds.\n")
+    print("Sorted array:\n", np.array(arr_list))
     
         
 

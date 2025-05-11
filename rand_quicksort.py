@@ -44,9 +44,10 @@ def partition(arr, low, high):
 if __name__ == "__main__":
     file = sys.argv[1]
     arr = np.load(file)
+    print("Unsorted \n", np.array(arr))
     start = time.time() 
     sortedArr = rand_QS(arr.tolist())
     end = time.time()
     timeF = end - start
-    print("Sorted {file} in {timeF} seconds.\n", file, timeF)
-    print(np.array(sortedArr))
+    print(f"Sorted {file} in {timeF:.6f} seconds.\n")
+    print(sortedArr)
