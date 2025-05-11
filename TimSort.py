@@ -1,4 +1,7 @@
 from typing import List
+import sys 
+import time
+import numpy as np
 
 def insertion_sort(arr: List[float], left: int, right: int) -> None:
     """
@@ -76,4 +79,10 @@ def main() -> None:
     print("Sorted array:  ", arr)
 
 if __name__ == "__main__":
-    main() 
+    file = sys.argv[1]
+    arr = np.load(file)
+    start = time.time() 
+    sortedArr = timsort(arr.tolist())
+    end = time.time()
+    timeF = end - start
+    print("Sorted {file} in {timeF} seconds.\n", file, timeF)

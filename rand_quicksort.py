@@ -1,5 +1,8 @@
 #Ayman Hassen
 #Random Quicksort
+import sys 
+import time
+import numpy as np
 
 import random
 '''
@@ -37,3 +40,12 @@ def partition(arr, low, high):
             arr[i], arr[j] = arr[j], arr[i]
     arr[i+1], arr[high] = arr[high], arr[i+1]
     return i+1
+
+if __name__ == "__main__":
+    file = sys.argv[1]
+    arr = np.load(file)
+    start = time.time() 
+    sortedArr = rand_QS(arr.tolist())
+    end = time.time()
+    timeF = end - start
+    print("Sorted {file} in {timeF} seconds.\n", file, timeF)

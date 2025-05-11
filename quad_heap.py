@@ -1,6 +1,8 @@
 #Miles Nordwall
 #Quad Heap
-
+import sys
+import time
+import numpy as np 
 
 '''
 heapify4 <- arr: , n: heap size, i: element of interest
@@ -66,7 +68,14 @@ def printArr(arr):
     print()
 
 
-
+if __name__ == "__main__":
+    file = sys.argv[1]
+    arr = np.load(file)
+    start = time.time() 
+    sortedArr = heap_sort(arr.tolist())
+    end = time.time()
+    timeF = end - start
+    print("Sorted {file} in {timeF} seconds.\n", file, timeF)
     
         
 
